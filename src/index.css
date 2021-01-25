@@ -1,0 +1,140 @@
+/* Global */
+
+body {
+  margin: 0;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: default;
+
+  width: 100%;
+  object-fit: contain;
+  background-image: url(./img/background.png);
+}
+html {
+  font-size: 12px;
+  font-family: "Playfair Display", serif;
+}
+
+.btn {
+  position: relative;
+  padding: 1.4rem 4.2rem;
+  padding-right: 3.1rem;
+  font-size: 1.4rem;
+  color: white;
+  letter-spacing: 1.1rem;
+  text-transform: uppercase;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.btn:hover {
+  font-weight: bold;
+}
+
+/* Home */
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 900px;
+}
+
+/* Nav-bar */
+.nav-bar {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Nasa Photo */
+
+.nasa-photo {
+  display: flex;
+  align-items: center;
+}
+.photo {
+  object-fit: contain;
+  border: white 1px solid;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.resume {
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.resume p,
+.resume span,
+.resume h2 {
+  color: white;
+}
+
+.resume h2 {
+  font-size: 25px;
+}
+
+.resume p {
+  font-size: 20px;
+}
+
+.resume span {
+  font-size: 19px;
+}
+
+/* Media-queries */
+
+@media (max-width: 1328px) {
+  /* Nasa-Photo */
+
+  .nasa-photo {
+    flex-direction: column;
+  }
+
+  .resume {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Nasa-Photo */
+  .photo {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Nasa-Photo */
+
+  .photo {
+    width: 80%;
+  }
+
+  .resume {
+    width: 100%;
+  }
+
+  .resume h2 {
+    font-size: 20px;
+  }
+
+  .resume p {
+    font-size: 15px;
+  }
+
+  .resume span {
+    font-size: 14px;
+  }
+}
